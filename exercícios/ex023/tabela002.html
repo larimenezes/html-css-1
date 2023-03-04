@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
             
         }
@@ -22,8 +23,25 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(111, 170, 172);
+        }
+
         thead, tfoot {
             background-color: rgba(201, 200, 200, 0.601);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: cadetblue;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(122, 181, 183); /* pode usar odd=impar ou even= par */
         }
 
         td.num {
@@ -35,10 +53,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,11 +172,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>214.153.873</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel tempore quibusdam doloremque vitae sed, tenetur facere ducimus excepturi earum possimus aliquam, vero repellendus, expedita accusantium officia dolorem doloribus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa tempora tenetur, beatae autem quaerat quidem recusandae ut optio. Corporis sit, aspernatur distinctio sunt nesciunt animi mollitia debitis. Molestias, natus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nisi laudantium exercitationem earum obcaecati delectus consequuntur repudiandae saepe. Assumenda repellendus molestias voluptatum atque minima velit, nostrum libero exercitationem necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus fuga libero nihil, eos animi fugit modi dolore, magnam eius amet iusto laudantium odio quo sint quibusdam? Sit, eos nam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel tempore quibusdam doloremque vitae sed, tenetur facere ducimus excepturi earum possimus aliquam, vero repellendus, expedita accusantium officia dolorem doloribus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa tempora tenetur, beatae autem quaerat quidem recusandae ut optio. Corporis sit, aspernatur distinctio sunt nesciunt animi mollitia debitis. Molestias, natus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nisi laudantium exercitationem earum obcaecati delectus consequuntur repudiandae saepe. Assumenda repellendus molestias voluptatum atque minima velit, nostrum libero exercitationem necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus fuga libero nihil, eos animi fugit modi dolore, magnam eius amet iusto laudantium odio quo sint quibusdam? Sit, eos nam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel tempore quibusdam doloremque vitae sed, tenetur facere ducimus excepturi earum possimus aliquam, vero repellendus, expedita accusantium officia dolorem doloribus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa tempora tenetur, beatae autem quaerat quidem recusandae ut optio. Corporis sit, aspernatur distinctio sunt nesciunt animi mollitia debitis. Molestias, natus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nisi laudantium exercitationem earum obcaecati delectus consequuntur repudiandae saepe. Assumenda repellendus molestias voluptatum atque minima velit, nostrum libero exercitationem necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus fuga libero nihil, eos animi fugit modi dolore, magnam eius amet iusto laudantium odio quo sint quibusdam? Sit, eos nam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel tempore quibusdam doloremque vitae sed, tenetur facere ducimus excepturi earum possimus aliquam, vero repellendus, expedita accusantium officia dolorem doloribus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa tempora tenetur, beatae autem quaerat quidem recusandae ut optio. Corporis sit, aspernatur distinctio sunt nesciunt animi mollitia debitis. Molestias, natus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nisi laudantium exercitationem earum obcaecati delectus consequuntur repudiandae saepe. Assumenda repellendus molestias voluptatum atque minima velit, nostrum libero exercitationem necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus fuga libero nihil, eos animi fugit modi dolore, magnam eius amet iusto laudantium odio quo sint quibusdam? Sit, eos nam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel tempore quibusdam doloremque vitae sed, tenetur facere ducimus excepturi earum possimus aliquam, vero repellendus, expedita accusantium officia dolorem doloribus laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa tempora tenetur, beatae autem quaerat quidem recusandae ut optio. Corporis sit, aspernatur distinctio sunt nesciunt animi mollitia debitis. Molestias, natus fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facere nisi laudantium exercitationem earum obcaecati delectus consequuntur repudiandae saepe. Assumenda repellendus molestias voluptatum atque minima velit, nostrum libero exercitationem necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus fuga libero nihil, eos animi fugit modi dolore, magnam eius amet iusto laudantium odio quo sint quibusdam? Sit, eos nam.</p>
 
 </body>
 </html>
